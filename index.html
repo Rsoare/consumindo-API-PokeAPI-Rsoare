@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Consumindo PokeAPI</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/src/scripts/requests.js" defer></script>
+  <script src="/src/scripts/index.js" defer></script>
 
-  <body></body>
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="stylesheet" href="/src/styles/globalStyles.css">
+  <link rel="stylesheet" href="/src/styles/index.css">
+
+  <title>Consumindo PokeAPI</title>
+</head>
+
+<body>
+  <header class="header__container">
+    <figure>
+      <img src="/src/assets/pokeapi.png" alt="Logo pokéApi">
+    </figure>
+
+    <form class="form__container">
+      <label for="PesquisarPokemon"></label>
+      <input type="text" name="PesquisarPokemon" class="form__input--text" placeholder="Pesquisar por...">
+
+      <img src="/src/assets/search-icon.png" alt="Botão de pesquisa" class="form__button">
+    </form>
+
+  </header>
+  <main class="main__container">
+    <h1>Lista de Pokémon</h1>
+    <section class="section__container">
+      <ul class="list__container">
+        <li class="list__item--container">
+          <img src="/1 2.svg" alt="teste" class="list__item--image">
+          <p class="list__item--text">Magikarp</p>
+        </li>
+        <li class="list__item--container">
+          <img src="/1 2.svg" alt="teste" class="list__item--image">
+          <p class="list__item--text">Magikarp</p>
+        </li>
+        <li class="list__item--container">
+          <img src="/1 2.svg" alt="teste" class="list__item--image">
+          <p class="list__item--text">Magikarp</p>
+        </li>
+        <li class="list__item--container">
+          <img src="/1 2.svg" alt="teste" class="list__item--image">
+          <p class="list__item--text">Magikarp</p>
+        </li>
+        <li class="list__item--container">
+          <img src="/1 2.svg" alt="teste" class="list__item--image">
+          <p class="list__item--text">Magikarp</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>

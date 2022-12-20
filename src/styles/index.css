@@ -1,1 +1,68 @@
-/* Monte sua estilização aqui */
+.header__container {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 13rem;
+}
+
+.form__container {
+    display: flex;
+    width: 90%;
+    height: 3.75rem;
+}
+
+.form__input--text {
+    width: 70%;
+    border-radius: var(--boderRadios-default);
+    border: none;
+    background-color: var(--color-input);
+    margin-right: 2rem;
+    color: var(--color-text);
+    font-size: var(--text-size);
+}
+
+.form__input--text:focus {
+    outline: 0;
+}
+
+.form__input--text::placeholder {
+    padding-left: 2rem;
+}
+
+.form__button {
+    width: 20%;
+    background-color: var(--color-button);
+    object-fit: none;
+    border-radius: var(--boderRadios-default);
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list__item--container {
+    display: flex;
+    align-items: center;
+    background-color: var(--backgroundColor-list);
+    border-radius: var(--boderRadios-default);
+}
