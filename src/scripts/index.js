@@ -87,4 +87,19 @@ function createLoadingScreen() {
     return li
 }
 
+function createMessageErro() {
+    const li = document.createElement('li')
+    const name = document.createElement('p')
+    const image = document.createElement('img')
+
+    li.classList.add('messageErro')
+
+    name.innerText = 'Pokemon não encontrado'
+    image.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif'
+    image.alt = 'Mewtwo'
+
+    li.append(name,image)
+
+    return li
+}
 buttonRenderPokemonSearch()

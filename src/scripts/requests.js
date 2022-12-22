@@ -13,9 +13,8 @@ async function getAllPokemons() {
             ulList.appendChild(liLoading)
             setTimeout(() => {
                 liLoading.remove()
-
                 renderListPokemon(res)
-            }, 5000)
+            }, 3000)
         })
 }
 
@@ -27,11 +26,16 @@ async function searchPokemon(pokemonName) {
             'Content-Type': 'application/json'
         }
     })
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                const ulList = document.querySelector('.list__container')
+                ulList.appendChild(createMessageErro())
+            }
+            return res.json()
+        })
         .then(res => {
             renderSearchPokemon(res)
         })
 
 }
-
 getAllPokemons()

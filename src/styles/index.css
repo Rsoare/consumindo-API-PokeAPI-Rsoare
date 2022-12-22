@@ -83,6 +83,22 @@
     align-items: center;
     margin-top: 5rem;
 }
+.messageErro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.messageErro > p {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.messageErro > img {
+    width: 4rem;
+    height: 4rem;
+}
 
 @media screen and (min-width: 769px) {
     .desktop__container {
