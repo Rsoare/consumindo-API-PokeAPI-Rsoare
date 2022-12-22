@@ -37,6 +37,7 @@
     background-color: var(--color-button);
     object-fit: none;
     border-radius: var(--boderRadios-default);
+    cursor: pointer;
 }
 
 .main__container {
@@ -65,4 +66,40 @@
     align-items: center;
     background-color: var(--backgroundColor-list);
     border-radius: var(--boderRadios-default);
+}
+
+.list__item--image {
+    width: 3.75rem;
+    height: 3.50rem;
+    object-fit: contain;
+    margin: 1rem;
+    min-width: none;
+}
+
+.loadingScreen {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+    .desktop__container {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header__container {
+        flex-direction: row;
+    }
+
+    .form__container {
+        justify-content: flex-end;
+    }
+
+    .form__input--text {
+        width: 40%;
+    }
 }
